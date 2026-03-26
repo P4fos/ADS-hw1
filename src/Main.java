@@ -10,45 +10,45 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Введите n: ");
-                    System.out.println("Результат: " + Task1.solve(sc.nextInt()));
+                    System.out.print("input n: ");
+                    System.out.println("result: " + Task1.solve(sc.nextInt()));
                     break;
                 case 2:
-                    System.out.print("Размер массива: ");
+                    System.out.print("Size of the array: ");
                     int n2 = sc.nextInt();
                     int[] a2 = new int[n2];
                     for(int i=0; i<n2; i++) a2[i] = sc.nextInt();
-                    System.out.println("Сумма: " + Task2.solve(a2, n2));
+                    System.out.println("Sum: " + Task2.solve(a2, n2));
                     break;
                 case 3:
-                    System.out.print("Введите n: ");
-                    System.out.println("Сумма: " + Task3.solve(sc.nextInt()));
+                    System.out.print("Input n: ");
+                    System.out.println("Sum: " + Task3.solve(sc.nextInt()));
                     break;
                 case 4:
-                    System.out.print("Введите основание b и степень n: ");
-                    System.out.println("Результат: " + Task4.solve(sc.nextDouble(), sc.nextInt()));
+                    System.out.print("Enter the base of b and the degree of n: ");
+                    System.out.println("Result: " + Task4.solve(sc.nextDouble(), sc.nextInt()));
                     break;
                 case 5:
-                    System.out.print("Количество элементов N: ");
+                    System.out.print("Number of elements N: ");
                     Task5.solve(sc.nextInt(), sc);
                     break;
                 case 6:
-                    System.out.print("Количество строк N: ");
+                    System.out.print("Number of rows N: ");
                     Task6.solve(sc.nextInt(), sc);
                     break;
                 case 7:
-                    System.out.print("Размер N: ");
+                    System.out.print("Size of N: ");
                     int n7 = sc.nextInt();
                     int[][] m = new int[n7][n7];
                     Task7.solve(m, 0, 0, n7-1, n7-1, 1);
                     printMatrix(m);
                     break;
                 case 8:
-                    System.out.print("Введите n и k: ");
+                    System.out.print("Input n and k: ");
                     Task8.solve(sc.nextInt(), sc.nextInt(), "");
                     break;
                 case 9:
-                    System.out.print("Введите строку: ");
+                    System.out.print("Input: ");
                     Task9.solve(sc.next(), "");
                     break;
                 case 10:
@@ -61,7 +61,7 @@ public class Main {
                     }
                     break;
                 default:
-                    System.out.println("Неверный номер задачи.");
+                    System.out.println("Invalid issue number.");
             }
         }
     }
